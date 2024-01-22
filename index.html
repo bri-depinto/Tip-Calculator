@@ -19,14 +19,35 @@
     </header>
 
     <main>
+
      <div class="container mt-5">
         <div class="row">
             <div class="col md-6">
+                 <!-- user input total bill amount -->
                 <label for="totalBill" class="form-label"> Total Bill</label>
+                <input type="text" class="form-control" id="totalBill" placeholder="Enter total bill amount">
+            </div>
+
+            <div class="col md-6">
+                <!-- user input total people -->
+                <label for="numPpl" class="form-label"> Number of People</label>
+                <input type="text" class="form-control" id="numPpl" placeholder="Enter total amount of people">
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <!-- dropdown for service quality -->
+                <label for="serviceQuality" class="form-label"> Service Quality: </label>
+                <select id="serviceQuality" class="form-select"></select>
+                <option value="Great"> Great</option>
+                <option value="good"> Good</option>
+                <option value="poor"> Poor</option>
+            </div>
+        </div>
+
      </div>
-        
+
     </main>
 
     <footer>
