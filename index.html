@@ -39,10 +39,25 @@
             <div class="col-md-6">
                 <!-- dropdown for service quality -->
                 <label for="serviceQuality" class="form-label"> Service Quality: </label>
-                <select id="serviceQuality" class="form-select"></select>
+                <select id="serviceQuality" class="form-select">
                 <option value="Great"> Great</option>
                 <option value="good"> Good</option>
                 <option value="poor"> Poor</option>
+            </select>
+            </div>
+
+            <div class="col md-6 mt-4">
+                <!-- button to run calculations -->
+                <button class="btn btn-danger" onclick="calculateAndDisplay()">Calculate Tip</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4>Results:</h4>
+                <p id="tipResult"></p>
+                <p id="totalBillResult"></p>
+                <p id="amtPerPersonResult"></p>
             </div>
         </div>
 
